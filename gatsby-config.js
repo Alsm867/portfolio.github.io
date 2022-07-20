@@ -21,14 +21,22 @@ module.exports = {
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        name: `Sam Ortega`,
+        location: `United States`,
+        socialMedia: [
+          {
+            title: '',
+            href: '',
+          }
+        ]
+      },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Emilia - @lekoarts/gatsby-theme-emilia`,
-        short_name: `Emilia`,
         description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
         start_url: `/`,
         background_color: `#fff`,
